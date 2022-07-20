@@ -2,6 +2,7 @@
 body {
   padding: 0;
   margin: 0 auto;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
@@ -10,7 +11,8 @@ body {
   display: flex;
   margin: 30px auto;
   background: #161616;
-  width: 85%;
+  width: 80%;
+  max-width: 1200px;
   border-radius: 30px;
 }
 .header-info {
@@ -73,7 +75,8 @@ body {
 .main-container {
   display: flex;
   justify-content: center;
-  width: 85%;
+  width: 80%;
+  max-width: 1200px;
   margin: 50px auto;
 }
 /* ----------------End main section------------ */
@@ -171,7 +174,7 @@ body {
   border-radius: 7px;
 }
 .blog-image img {
-  width: 260px;
+  width: 90%;
 }
 .blog-info {
   margin: 0px 10px;
