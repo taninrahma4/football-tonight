@@ -127,8 +127,8 @@ body {
 
 /* ----------------start container option------------ */
 .container-options {
-  width: 20%;
-  height: 215px;
+  width: 23%;
+  height: 210px;
   margin-right: 20px;
   margin-left: 0;
   background: #161616;
@@ -143,6 +143,7 @@ body {
   margin: 22px;
   padding: 10px 15px;
   border-radius: 10px;
+  border: 1px solid transparent;
 }
 .container-options button a {
   text-decoration: none;
@@ -256,7 +257,6 @@ hr {
 .social-contact a:hover {
   transform: scale(1.1);
 }
-
 /* ----------------end footer------------ */
 
 /* ----------------start responsive website------------ */
