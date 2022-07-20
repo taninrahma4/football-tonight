@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Poppins&display=swap");
+body {
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+/* -------Start Similar styles--------- */
+.container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 2em;
+  display: none;
+  border: 2px solid red;
+}
+/* -------End Similar styles--------- */
+
+/* ----------------Start Header------------ */
+header {
+  background: #161616;
+  border-radius: 30px;
+  color: white;
+}
+.header-info {
+  width: 50%;
+  margin-left: 5em;
+  margin-top: 2em;
+  margin-bottom: 5em;
+  margin-right: -2.5em;
+}
+.header-title {
+  font-size: 3.25em;
+  line-height: 65px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  width: 335px;
+}
+.header-para {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 2em;
+  margin-right: 0;
+  width: 428px;
+}
+.watch-live-btn a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.watch-live-btn {
+  font-weight: 400;
+  text-align: center;
+  padding: 10px 20px;
+  background: #dd0000;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+}
+.fa-greater-than {
+  margin-left: 10px;
+}
+.header-image img {
+  height: 100%;
+}
+
+/* ----------------End Header------------ */
+
+/* ----------------start main section------------ */
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 50px auto;
+}
+/* ----------------End main section------------ */
+
+/* ----------------start container option------------ */
+.container-options {
+  width: 20%;
+  height: 215px;
+  margin-right: 20px;
+  margin-left: 0;
+  background: #161616;
+  border-radius: 10px;
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+.container-options button {
+  display: block;
+  width: 150px;
+  margin: 22px;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.container-options button a {
+  text-decoration: none;
+  color: #161616;
+  font-size: 14px;
+  font-weight: 500;
+}
+.active {
+  background: #dd0000;
+}
+#active-color {
+  color: #ffffff;
+}
+/* ----------------end container option------------ */
+
+/* ----------------start article container------------ */
+.blog-container {
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.blog {
+  border: 1px solid #e8e8e8;
+  border-radius: 7px;
+}
+.blog-image img {
+  width: 260px;
+}
+.blog-info {
+  margin: 0px 10px;
+}
+.blog-info p {
+  font-weight: 600;
+  font-size: 0.95em;
+  margin: 12px 0;
+}
+.blog-info button {
+  margin-top: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.upload-time-n-cmnts {
+  display: flex;
+  /* margin-left: 10px; */
+}
+.upload-time-n-cmnts span img {
+  width: 18px;
+}
+.upload-time-n-cmnts span {
+  margin-right: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+/* ----------------end article container------------ */
+
+/* ----------------start footer------------ */
+
+footer {
+  margin-top: 8em;
+  width: 100%;
+  background: black;
+  padding: 2em 0;
+}
+.footer-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.footer-title {
+  text-align: center;
+  color: #ffffff;
+}
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-menu ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.footer-menu ul li {
+  list-style: none;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 2em;
+}
+.footer-menu ul li a {
+  text-decoration: none;
+  color: #b9b9b9;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+/* ----------------end footer------------ */
+
+@media screen and (max-width: 567px) {
+  .container {
+    flex-direction: column;
+  }
+  .header-info {
+    margin: 0;
+  }
+  .header-title {
+    font-size: 22px;
+    line-height: normal;
+    display: block;
+    width: 228px;
+    margin: 10px auto;
+  }
+  .header-para {
+    font-size: 14px;
+    width: 250px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .watch-live-btn {
+    padding: 8px 12px;
+  }
+}
