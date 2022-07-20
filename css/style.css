@@ -87,6 +87,53 @@ body {
 }
 /* ----------------End main section------------ */
 
+/* -----------start upcoming match-------------- */
+.upcoming-matches {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+.match {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 40px 30px;
+}
+.flags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flags span {
+  font-weight: 700;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.germany-flag img,
+.france-flag img {
+  width: 90%;
+}
+.match-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.match-info h2 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.match-info p {
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* -----------end upcoming match-------------- */
+
 /* ----------------start container option------------ */
 .container-options {
   width: 20%;
@@ -200,26 +247,29 @@ hr {
   font-weight: 500;
   font-size: 1em;
 }
-.social-contact{
+.social-contact {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.fa-facebook-square,.fa-instagram,.fa-twitter-square{
+.fa-facebook-square,
+.fa-instagram,
+.fa-twitter-square {
   color: white;
   font-size: 25px;
-  padding: 0 15px ;
+  padding: 0 15px;
 }
-.social-contact a{
+.social-contact a {
   transition: transform 0.1s;
 }
-.social-contact a:hover{
+.social-contact a:hover {
   transform: scale(1.1);
 }
 
 /* ----------------end footer------------ */
 
 /* ----------------start responsive website------------ */
+
 @media screen and (max-width: 567px) {
   .header-container {
     flex-direction: column;
@@ -283,12 +333,16 @@ hr {
     font-size: 10px;
     font-weight: 500;
   }
-  .blog-container {
+  .blog-container,.upcoming-matches {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 10px;
   }
   .blog-image img {
     width: 100%;
+  }
+  .germany-flag img,.france-flag img{
+    width: 90%;
+
   }
   footer {
     margin-top: 0;
@@ -357,9 +411,12 @@ hr {
   .hidden-blog {
     display: none;
   }
-  .blog-container {
+  .france-flag img,
+  .germany-flag img {
+    width: 90%;
+  }
+  .blog-container,.upcoming-matches {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
   }
   .blog-image img {
     width: 100%;
@@ -381,25 +438,25 @@ hr {
     font-size: 20px;
     color: #fff;
   }
-  .footer-container{
+  .footer-container {
     width: 100%;
   }
-  hr{
+  hr {
     width: 80%;
     margin: 0 auto;
   }
-  .footer-menu ul{
+  .footer-menu ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     /* border: 2px solid red; */
     padding: 0;
   }
-  .footer-menu ul li{
+  .footer-menu ul li {
     margin-right: 40px;
     /* border: 1px solid blue; */
   }
-  .footer-menu ul li a{
+  .footer-menu ul li a {
     font-size: 18px;
   }
 }
