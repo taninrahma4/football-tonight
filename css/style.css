@@ -4,41 +4,36 @@ body {
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
 }
-/* -------Start Similar styles--------- */
-.container {
-  display: flex;
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 2em;
-  display: none;
-  border: 2px solid red;
-}
-/* -------End Similar styles--------- */
 
-/* ----------------Start Header------------ */
-header {
+/* ----------------Start Header Container------------ */
+.header-container {
+  display: flex;
+  margin: 30px auto;
   background: #161616;
+  width: 85%;
   border-radius: 30px;
-  color: white;
 }
 .header-info {
-  width: 50%;
   margin-left: 5em;
-  margin-top: 2em;
-  margin-bottom: 5em;
-  margin-right: -2.5em;
+  margin-bottom: 4em;
+  margin-top: 3em;
+  width: 50%;
+  color: #ffffff;
 }
+
 .header-title {
   font-size: 3.25em;
   line-height: 65px;
   margin-bottom: 20px;
+  line-height: 55px;
   font-weight: 700;
   width: 335px;
 }
+
 .header-para {
   font-weight: 400;
   font-size: 14px;
-  line-height: 26px;
+  /* line-height: 26px; */
   margin-bottom: 2em;
   margin-right: 0;
   width: 428px;
@@ -47,6 +42,14 @@ header {
   text-decoration: none;
   color: #ffffff;
 }
+/* @keyframes zoom {
+  form{
+    color: white;
+  }
+  to{
+    color: blue;
+  }
+  } */
 .watch-live-btn {
   font-weight: 400;
   text-align: center;
@@ -55,22 +58,31 @@ header {
   font-size: 1em;
   border-radius: 5px;
   border: none;
+  /* transition: transform 0.1s; */
+  /* animation: zoom 5s linear 2s infinite alternate; */
 }
+/* .watch-live-btn:hover{
+  transform: scale(1.1);
+} */
 .fa-greater-than {
   margin-left: 10px;
 }
-.header-image img {
-  height: 100%;
+.header-image {
+  position: relative;
+  top: 40.5px;
+  right: 30px;
 }
-
-/* ----------------End Header------------ */
+.header-image img {
+  width: 400px;
+}
+/* ----------------End Header Container------------ */
 
 /* ----------------start main section------------ */
 
 .main-container {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 85%;
   margin: 50px auto;
 }
 /* ----------------End main section------------ */
@@ -97,7 +109,7 @@ header {
 .container-options button a {
   text-decoration: none;
   color: #161616;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
 }
 .active {
@@ -148,6 +160,9 @@ header {
   text-align: center;
   font-size: 12px;
 }
+.view-all-btn {
+  display: none;
+}
 /* ----------------end article container------------ */
 
 /* ----------------start footer------------ */
@@ -185,30 +200,206 @@ hr {
   font-weight: 500;
   font-size: 1em;
 }
+.social-contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-facebook-square,.fa-instagram,.fa-twitter-square{
+  color: white;
+  font-size: 25px;
+  padding: 0 15px ;
+}
+.social-contact a{
+  transition: transform 0.1s;
+}
+.social-contact a:hover{
+  transform: scale(1.1);
+}
 
 /* ----------------end footer------------ */
 
+/* ----------------start responsive website------------ */
 @media screen and (max-width: 567px) {
-  .container {
+  .header-container {
     flex-direction: column;
   }
   .header-info {
-    margin: 0;
+    margin: 40px auto;
+    width: 100%;
   }
   .header-title {
-    font-size: 22px;
+    font-size: 20px;
+    width: 215px;
+    text-align: center;
     line-height: normal;
+    margin: 0 auto;
+  }
+  .header-para {
+    font-size: 12px;
+    width: 200px;
+    height: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 auto;
+    padding-top: 15px;
+  }
+  .watch-live-btn {
     display: block;
-    width: 228px;
-    margin: 10px auto;
+    margin: 20px auto;
+    padding: 5px 10px;
+  }
+  .header-image {
+    position: static;
+  }
+  .header-image img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  .main-container {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .container-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    background: #fff;
+    border-radius: 0;
+  }
+  .container-options button {
+    width: 150px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 5px 25px;
+    border-radius: 10px;
+    border: 1px solid #e8e8e8;
+  }
+  .container-options button a {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .blog-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 10px;
+  }
+  .blog-image img {
+    width: 100%;
+  }
+  footer {
+    margin-top: 0;
+  }
+  .footer-menu ul {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 30px;
+    padding: 0;
+    text-align: center;
+  }
+  .footer-menu ul li {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+/* -----Responsive for Tablet------------ */
+
+@media screen and (min-width: 567px) and (max-width: 992px) {
+  .header-info {
+    margin-top: 4em;
+    margin-left: 3.5em;
+  }
+  .header-title {
+    font-size: 39px;
+    line-height: 44px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
   .header-para {
     font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 10px;
+    height: 45px;
     width: 250px;
-    text-align: center;
+  }
+  .header-image {
+    position: absolute;
+    top: 102.5px;
+    right: 60px;
+  }
+  .header-image img {
+    width: 95%;
+  }
+  .main-container {
+    flex-direction: column;
+  }
+  .container-options {
+    width: 100%;
+    height: 43px;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    margin-bottom: 20px;
+  }
+  .container-options button {
+    margin: 0;
+    width: 30%;
+    padding: 10px 15px;
+    border: 1px solid #e8e8e8;
+  }
+  .container-options button a {
+    font-size: 20px;
+  }
+  .hidden-blog {
+    display: none;
+  }
+  .blog-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .blog-image img {
+    width: 100%;
+  }
+  .view-all-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .view-all-btn button {
+    padding: 8px 14px;
+    background: #dd0000;
+    border-radius: 5px;
+    border: 1px transparent;
+  }
+  .view-all-btn button a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+  }
+  .footer-container{
+    width: 100%;
+  }
+  hr{
+    width: 80%;
     margin: 0 auto;
   }
-  .watch-live-btn {
-    padding: 8px 12px;
+  .footer-menu ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    padding: 0;
+  }
+  .footer-menu ul li{
+    margin-right: 40px;
+    /* border: 1px solid blue; */
+  }
+  .footer-menu ul li a{
+    font-size: 18px;
   }
 }
