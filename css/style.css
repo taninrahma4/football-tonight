@@ -54,7 +54,7 @@ body {
   border: none;
   transition: transform 0.1s;
 }
-.watch-live-btn:hover{
+.watch-live-btn:hover {
   transform: scale(1.1);
 }
 .fa-greater-than {
@@ -107,7 +107,7 @@ body {
 }
 .germany-flag img,
 .france-flag img {
-  width:100%;
+  width: 100%;
 }
 .match-info {
   display: flex;
@@ -329,14 +329,16 @@ hr {
     font-size: 10px;
     font-weight: 500;
   }
-  .blog-container,.upcoming-matches {
+  .blog-container,
+  .upcoming-matches {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 10px;
   }
   .blog-image img {
     width: 100%;
   }
-  .germany-flag img,.france-flag img{
+  .germany-flag img,
+  .france-flag img {
     width: 90%;
   }
   footer {
@@ -410,7 +412,8 @@ hr {
   .germany-flag img {
     width: 90%;
   }
-  .blog-container,.upcoming-matches {
+  .blog-container,
+  .upcoming-matches {
     grid-template-columns: repeat(2, 1fr);
   }
   .blog-image img {
