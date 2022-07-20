@@ -85,7 +85,7 @@ body {
 .upcoming-matches {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 25px;
+  grid-gap: 35px;
 }
 .match {
   display: flex;
